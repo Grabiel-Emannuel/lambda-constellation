@@ -1,0 +1,7 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "wasm/deterministic-solver",
+    "wasm/non-deterministic-solver"
+]

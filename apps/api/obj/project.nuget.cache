@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "feJI2m5u7P0=",
+  "success": true,
+  "projectFilePath": "/home/grabiel/tcc/lambda-constellation/apps/api/api.csproj",
+  "expectedPackageFiles": [
+    "/home/grabiel/.nuget/packages/microsoft.aspnetcore.openapi/10.0.12/microsoft.aspnetcore.openapi.10.0.12.nupkg.sha512",
+    "/home/grabiel/.nuget/packages/microsoft.openapi/2.12.0/microsoft.openapi.2.12.0.nupkg.sha512"
+  ],
+  "logs": []
+}
