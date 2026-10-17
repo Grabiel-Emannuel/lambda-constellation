@@ -1,0 +1,52 @@
+name: "Framework bug (Patch)"
+description: "Report an implemented behavior that needs to be fixed."
+title: "[Patch] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Report failures in implemented functionality here. For a capability that does not exist yet, use one of the proposal forms.
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: Provide the version, tag, or commit hash where the problem occurred.
+      placeholder: "For example, a commit hash or published version"
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Provide the browser, operating system, and affected components when relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Steps to reproduce
+      description: Include inputs, commands, or actions in the order they were performed.
+      placeholder: "1. ...\n2. ...\n3. ..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected-result
+    attributes:
+      label: Expected result
+      description: What should happen according to the implemented or documented behavior?
+    validations:
+      required: true
+  - type: textarea
+    id: actual-result
+    attributes:
+      label: Actual result
+      description: What happened instead? Include effects on scientific results or contributions, if any.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Additional evidence
+      description: Attach relevant logs, screenshots, minimal inputs, or links. Remove sensitive data before sharing.
+    validations:
+      required: false

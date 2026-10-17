@@ -1,0 +1,43 @@
+name: "Framework feature (Minor)"
+description: "Propose a new capability that remains compatible with existing contracts and workflows."
+title: "[Minor] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for a new capability that preserves compatibility for projects already using this framework as a repository template.
+  - type: textarea
+    id: need
+    attributes:
+      label: Need and objective
+      description: What research or framework use case motivates this proposal?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-capability
+    attributes:
+      label: Proposed capability
+      description: Describe the expected behavior and an example of use if possible.
+    validations:
+      required: true
+  - type: textarea
+    id: integration
+    attributes:
+      label: Framework integration
+      description: Which parts would be affected (API, web app, Web Workers, Rust/WASM solvers, documentation, or others)?
+    validations:
+      required: true
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility
+      description: Explain how the proposal preserves existing or planned contracts and workflows. If it introduces a breaking change, use the Major form.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: Which observable outcomes would show that the feature is complete?
+    validations:
+      required: true

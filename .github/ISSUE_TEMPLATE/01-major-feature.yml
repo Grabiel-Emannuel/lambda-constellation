@@ -1,0 +1,51 @@
+name: "Framework feature (Major)"
+description: "Propose a capability that requires a breaking change to existing contracts or workflows."
+title: "[Major] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form when a proposed feature requires a breaking change for projects using this framework as a repository template. Describe planned interfaces as proposals, not as features that already exist.
+  - type: textarea
+    id: need
+    attributes:
+      label: Need and objective
+      description: What research or framework use case motivates this proposal?
+      placeholder: "Describe the scenario and who would benefit from the change."
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-behavior
+    attributes:
+      label: Proposed behavior
+      description: What should the framework support? Include an example of use if possible.
+    validations:
+      required: true
+  - type: textarea
+    id: breaking-change
+    attributes:
+      label: Breaking change
+      description: Which contract, data format, integration workflow, or previous expectation would need to change?
+    validations:
+      required: true
+  - type: textarea
+    id: scientific-impact
+    attributes:
+      label: Impact on distributed scientific computing
+      description: Explain the expected effects on solvers, browser execution, contributions, or shared state, as applicable.
+    validations:
+      required: true
+  - type: textarea
+    id: migration
+    attributes:
+      label: Migration for projects using the template
+      description: How could existing projects adapt? If you do not know yet, state what needs investigation.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: Which observable outcomes would show that the feature is complete?
+    validations:
+      required: true

@@ -1,0 +1,50 @@
+name: "Scientific problem compatibility"
+description: "Propose support for a class of scientific problems the framework does not yet cover."
+title: "[Scientific compatibility] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This form is for researchers who found a class of scientific computing problems that the framework cannot yet represent or run. The proposal will inform evaluation for a future version.
+  - type: textarea
+    id: problem-class
+    attributes:
+      label: Problem class and scientific objective
+      description: Describe the class of problems, its inputs and outputs, and the expected scientific result.
+    validations:
+      required: true
+  - type: textarea
+    id: minimal-example
+    attributes:
+      label: Minimal example
+      description: Provide a small problem instance or pseudocode that demonstrates the need.
+    validations:
+      required: true
+  - type: textarea
+    id: required-properties
+    attributes:
+      label: Required properties
+      description: Which search, precision, correctness, completeness, reproducibility, or result validation requirements apply? State when something is unknown.
+    validations:
+      required: true
+  - type: textarea
+    id: current-limitation
+    attributes:
+      label: Current limitation
+      description: What currently prevents integration of this problem into the template? Point to interfaces or documentation if you know where the gap is.
+    validations:
+      required: true
+  - type: textarea
+    id: desired-adaptation
+    attributes:
+      label: Desired adaptation
+      description: Describe the capability or contract needed. You do not need to design the complete technical solution.
+    validations:
+      required: true
+  - type: textarea
+    id: coverage-check
+    attributes:
+      label: How to verify coverage
+      description: Which example, experiment, or test would demonstrate that a future version supports this class of problems?
+    validations:
+      required: true

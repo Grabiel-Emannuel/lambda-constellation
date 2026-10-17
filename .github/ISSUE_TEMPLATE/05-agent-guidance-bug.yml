@@ -1,0 +1,73 @@
+name: "Coding agent guidance bug"
+description: "Report missing or ambiguous instructions that led an agent to integrate a scientific problem incorrectly."
+title: "[Agent guidance] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The framework should guide tools such as Codex, Claude Code, and Antigravity when adapting scientific problems to volunteer computing. Report cases where repository instructions led to an incorrect integration or prevented the agent from making progress. You do not need to propose the distributed computing solution.
+  - type: input
+    id: tool-and-version
+    attributes:
+      label: Tool and version
+      description: Which coding agent did you use? If its version is unavailable, say so.
+      placeholder: "For example, Codex; version unavailable"
+    validations:
+      required: true
+  - type: textarea
+    id: agent-session-link
+    attributes:
+      label: Agent session link or transcript
+      description: Share a link to the agent session. If the tool cannot provide a shareable link, write "No shareable link" and paste a redacted transcript or the relevant exchanges here. Remove private information before sharing either a link or transcript.
+      placeholder: "https://... or No shareable link: [redacted conversation]"
+    validations:
+      required: true
+  - type: input
+    id: repository-version
+    attributes:
+      label: Repository version or commit
+      description: Provide the version, tag, or commit hash used by the agent.
+    validations:
+      required: true
+  - type: textarea
+    id: agent-task
+    attributes:
+      label: Task given to the agent
+      description: Paste the request, context, and relevant instructions. Remove confidential information before submitting.
+    validations:
+      required: true
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Observed behavior
+      description: What did the agent do or say? Refer to relevant files, decisions, or excerpts if possible.
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: What should the agent have been able to do to integrate the problem into the framework?
+    validations:
+      required: true
+  - type: textarea
+    id: guidance-gap
+    attributes:
+      label: Missing or ambiguous guidance
+      description: Which repository instruction, example, contract, or command seems to have caused the failure? If unsure, describe where the agent lacked guidance.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Steps to reproduce
+      description: Explain how to repeat the task with an agent and observe the failure.
+    validations:
+      required: true
+  - type: textarea
+    id: researcher-impact
+    attributes:
+      label: Impact on the researcher
+      description: Explain whether the failure blocks integration, produces incorrect results, or requires technical knowledge that the documentation should provide.
+    validations:
+      required: true
