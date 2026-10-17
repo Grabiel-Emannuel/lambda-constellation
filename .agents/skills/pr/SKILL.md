@@ -1,9 +1,9 @@
 ---
-name: create-english-pr
-description: Create or update an English GitHub pull request for this repository, including an English documentation review and the project's four-part PR body.
+name: pr
+description: Open a pull request on GitHub.
 ---
 
-# Create an English pull request
+# Pull requests
 
 Use this skill when asked to open or update a pull request for Lambda Constellation. Keep the PR title, body, and any new or edited documentation in English.
 
@@ -12,8 +12,8 @@ Use this skill when asked to open or update a pull request for Lambda Constellat
 1. Inspect the working tree, current branch, target branch, relevant changes, and any existing PR. Preserve unrelated work. Use `main` as the PR base unless the user specifies another base.
 2. Review the implementation and run checks that actually apply to the change. Record the commands and results. Do not mark an evaluation criterion complete unless it was verified.
 3. Check the language of **all tracked, human-written repository documentation**, including `README.md`, `AGENTS.md`, `CONTRIBUTING.md`, `CHANGELOG.md`, `docs/`, and GitHub issue or PR templates. Also check any new or edited documentation outside those paths. Use `git ls-files` to inventory files; inspect prose rather than relying only on an automated language guess. Exclude generated output, dependencies, code identifiers, and quoted examples that must retain their original wording. Translate non-English documentation that belongs to the requested change; report unrelated existing exceptions in the PR instead of silently claiming that everything is in English.
-4. If needed, create a focused branch from the appropriate base. Stage only intended files. Use an English semantic commit subject (for example, `feat: add framework issue templates`). When Codex contributed to the commit, include `Co-authored-by: Codex <codex@openai.com>` in its trailer. For revisions to the same PR's own commit, amend it instead of adding a fixup commit when safe; preserve other authors' work and use `--force-with-lease` when pushing a rewritten commit.
-5. Push the branch, then create or update the GitHub PR against the base branch. Use an English title and the body format below. If `gh pr edit` fails, the GitHub REST API via `gh api` is an acceptable fallback. Verify the published PR title, body, base, and head after updating it.
+4. If needed, create a focused branch from the appropriate base. Stage only intended files. Use an English semantic commit subject (for example, `feat: add framework issue templates`). If an agent contributed, include a `Co-authored-by` trailer with that agent's actual name and appropriate email. Choose the commit approach from the user's request and the branch state, then push the branch.
+5. Create or update the GitHub PR against the base branch. Use an English title and the body format below. If `gh pr edit` fails, the GitHub REST API via `gh api` is an acceptable fallback. Verify the published PR title, body, base, and head after updating it.
 
 ## PR body
 

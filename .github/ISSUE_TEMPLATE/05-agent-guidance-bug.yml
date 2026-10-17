@@ -14,6 +14,14 @@ body:
       placeholder: "For example, Codex; version unavailable"
     validations:
       required: true
+  - type: textarea
+    id: agent-session-link
+    attributes:
+      label: Agent session link or transcript
+      description: Share a link to the agent session. If the tool cannot provide a shareable link, write "No shareable link" and paste a redacted transcript or the relevant exchanges here. Remove private information before sharing either a link or transcript.
+      placeholder: "https://... or No shareable link: [redacted conversation]"
+    validations:
+      required: true
   - type: input
     id: repository-version
     attributes:
