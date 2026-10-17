@@ -189,7 +189,7 @@ Documentation is under development. Contributions and suggestions are welcome in
 
 ## Academic Context
 
-**Lambda Constellation** is being developed as an **undergraduate thesis (Trabalho de Conclusão de Curso, TCC)** on browser-based volunteer computing, combinatorial search-space exploration, and reusable platforms supported by coding agents.
+**Lambda Constellation** is being developed as an **undergraduate thesis (TCC)** on browser-based volunteer computing, combinatorial search-space exploration, and reusable platforms supported by coding agents.
 
 The project investigates how to make distributed computing infrastructure more accessible to researchers experimenting with their own algorithms, while keeping scientific logic separate from application infrastructure.
 
